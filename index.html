@@ -1,51 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git-Hub.Explorer</title>
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!--  
-    <figure class="backCat">
-        
+    <div class="wrapper">
         <img 
-        src="imgs/Vector.png" 
-        alt="logoCat" 
-        class="bigCat">
-
-    </figure>
--->
-    <header>        
-        <img
-        src="imgs/Union.png" 
-        alt="logoUnion" 
-        class="logo"
-        >           
-        <strong>github</strong>_explorer
-    </header>
+            src="./assets/github.svg" 
+            alt="Github" 
+            class="github-image"
+        >
     
-    <main>
-        <section>
-            <h1>Explore repositórios no Github.</h1>
-            
-            <div class="buttons">
-                <input type="text" name="search-txt" id="search-text" placeholder="Digite aqui" class="button-text"
-                >
-
-                <input type="button" value="Pesquisar" class="button-search">
-            </div>
-            
-            <nav>
-                <ul>
+        <header class="header-container">        
+            <img
+                src="./assets/logo.svg" 
+                alt="Logo" 
+                class="logo"
+            >           
+        </header>
+        
+        <main class="container">
+            <h1 class="title">Explore repositórios no Github.</h1>
+    
+            <section>
+                <form class="search-area">
+                    <input
+                        name="search" 
+                        id="search-input" 
+                        placeholder="Digite aqui" 
+                        class="search-input"
+                    >
+    
+                    <button type="submit" class="search-button">
+                        Pesquisar
+                    </button>
+                </form>
+                
+                <ul class="repositories-list">
+                    <li class="repository-item">
+                        <img 
+                            src="./assets/avatar.svg"
+                            alt="Avatar"
+                        >
+    
+                        <div class="repository-item-information">
+                            <strong>
+                                (qualquer nome)
+                            </strong>
+                            
+                            <p>
+                                Descrição do repo
+                            </p>
+                        </div>
+                    </li>
+                    <!-- 
                     <li>
                         <div>
-                            
                             <img 
-                            src="imgs/Union.png"
-                            alt="userPic" align="left"
+                            src="Union.png" 
+                            alt="userPic"
                             >
                             
                             <p class="userName">
@@ -61,7 +83,7 @@
                         <div>
                             
                             <img 
-                            src="imgs/Union.png" 
+                            src="Union.png" 
                             alt="userPic"
                             align="left"
                             >
@@ -79,25 +101,7 @@
                         <div>
                             
                             <img 
-                            src="imgs/Union.png" 
-                            alt="userPic"
-                            align="left"
-                            >
-                            
-                            <p class="userName">
-                                (qualquer nome)
-                            </p>
-                            
-                            <p class="descriptionUser">
-                                Descrição do repo
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            
-                            <img 
-                            src="imgs/Union.png" 
+                            src="Union.png" 
                             alt="userPic"
                             align="left"
                             >
@@ -114,7 +118,7 @@
                     <li>
                         <div>
                             <img 
-                            src="imgs/Union.png" 
+                            src="Union.png" 
                             alt="userPic"
                             align="left"
                             >
@@ -129,7 +133,7 @@
                     <li>
                         <div>
                             <img
-                            src="imgs/Union.png"
+                            src="Union.png"
                             alt="userPic"
                             align="left"
                             >
@@ -141,11 +145,11 @@
                             </p>
                         </div>
                     </li>
+                    -->
+                    
                 </ul>
-            </nav>
-        </section>
-    </main>
-
-
+            </section>
+        </main>
+    </div>
 </body>
 </html>
