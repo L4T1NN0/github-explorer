@@ -1,151 +1,231 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git-Hub.Explorer</title>
+    <title>Git-Hub.Explorer</title> 
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!--  
-    <figure class="backCat">
+    <div class="wrapper">   
         
-        <img 
-        src="imgs/Vector.png" 
-        alt="logoCat" 
-        class="bigCat">
+            <img 
+                src="imgs/Github.svg" 
+                alt="logoCat" 
+                class="github-image"
+            >
 
-    </figure>
--->
-    <header>        
-        <img
-        src="imgs/Union.png" 
-        alt="logoUnion" 
-        class="logo"
-        >           
-        <strong>github</strong>_explorer
-    </header>
-    
-    <main>
-        <section>
-            <h1>Explore repositórios no Github.</h1>
+        <header class="header-container">        
             
-            <div class="buttons">
-                <input type="text" name="search-txt" id="search-text" placeholder="Digite aqui" class="button-text"
-                >
+            <img
+                src="imgs/Logo.svg" 
+                alt="logoUnion" 
+                class="logo"
+            >           
 
-                <input type="button" value="Pesquisar" class="button-search">
-            </div>
+        </header>
+        
+        <main class="container">
             
-            <nav>
-                <ul>
-                    <li>
-                        <div>
-                            
-                            <img 
-                            src="imgs/Union.png"
-                            alt="userPic" align="left"
-                            >
-                            
+            <h1 class="title">Explore repositórios no Github.</h1>
+
+            <section>
+                
+                <form class="search-area">
+                    
+                    <input 
+                    name="search"
+                    id="search-input"
+                    placeholder="Digite aqui"
+                    class="search-input"
+                    >
+
+                    <button type="submit"
+                    class="search-button"
+                    onclick="result()">
+                    
+                    Pesquisar
+
+                    </button>
+
+                </form>
+                
+                <ul class="repositories-list">
+                    <li class="repository-item">
+                        
+                        <img 
+                        src="imgs/Union.png"
+                        alt="userPic"
+                        >
+                        
+                        <div class="repository-item-information">
+
                             <p class="userName">
+                                
                                 (qualquer nome)
+
                             </p>
                             
                             <p class="descriptionUser">
+
                                 Descrição do repo
+
                             </p>
                         </div>
+
+                        <img src="imgs/arrow.svg"
+                        alt="arrow-next-pag"
+                        class="arrow-next-pag"
+                        >
                     </li>
-                    <li>
-                        <div>
-                            
-                            <img 
-                            src="imgs/Union.png" 
-                            alt="userPic"
-                            align="left"
-                            >
-                            
+                    <li class="repository-item">
+                        
+                        <img 
+                        src="imgs/Union.png"
+                        alt="userPic"
+                        >
+                        
+                        <div class="repository-item-information">
+
                             <p class="userName">
+                                
                                 (qualquer nome)
+
                             </p>
                             
                             <p class="descriptionUser">
+
                                 Descrição do repo
+
                             </p>
                         </div>
+
+                        <img src="imgs/arrow.svg"
+                        alt="arrow-next-pag"
+                        class="arrow-next-pag"
+                        >
                     </li>
-                    <li>
-                        <div>
-                            
-                            <img 
-                            src="imgs/Union.png" 
-                            alt="userPic"
-                            align="left"
-                            >
-                            
+                    <li class="repository-item">
+                        
+                        <img 
+                        src="imgs/Union.png"
+                        alt="userPic"
+                        >
+                        
+                        <div class="repository-item-information">
+
                             <p class="userName">
+                                
                                 (qualquer nome)
+
                             </p>
                             
                             <p class="descriptionUser">
+
                                 Descrição do repo
+
                             </p>
                         </div>
+
+                        <img src="imgs/arrow.svg"
+                        alt="arrow-next-pag"
+                        class="arrow-next-pag"
+                        >
                     </li>
-                    <li>
-                        <div>
-                            
-                            <img 
-                            src="imgs/Union.png" 
-                            alt="userPic"
-                            align="left"
-                            >
-                            
+                    <li class="repository-item">
+                        
+                        <img 
+                        src="imgs/Union.png"
+                        alt="userPic"
+                        >
+                        
+                        <div class="repository-item-information">
+
                             <p class="userName">
+                                
                                 (qualquer nome)
+
                             </p>
                             
                             <p class="descriptionUser">
+
                                 Descrição do repo
+
                             </p>
                         </div>
+
+                        <img src="imgs/arrow.svg"
+                        alt="arrow-next-pag"
+                        class="arrow-next-pag"
+                        >
+
                     </li>
-                    <li>
-                        <div>
-                            <img 
-                            src="imgs/Union.png" 
-                            alt="userPic"
-                            align="left"
-                            >
+                    <li class="repository-item">
+                        
+                        <img 
+                        src="imgs/Union.png"
+                        alt="userPic"
+                        >
+                        
+                        <div class="repository-item-information">
+
                             <p class="userName">
+                                
                                 (qualquer nome)
+
                             </p>
+                            
                             <p class="descriptionUser">
+
                                 Descrição do repo
+
                             </p>
                         </div>
+
+                        <img src="imgs/arrow.svg"
+                        alt="arrow-next-pag"
+                        class="arrow-next-pag"
+                        >
                     </li>
-                    <li>
-                        <div>
-                            <img
-                            src="imgs/Union.png"
-                            alt="userPic"
-                            align="left"
-                            >
+                    <li class="repository-item">
+                        
+                        <img 
+                        src="imgs/Union.png"
+                        alt="userPic"
+                        >
+                        
+                        <div class="repository-item-information">
+
                             <p class="userName">
+                                
                                 (qualquer nome)
+
                             </p>
+                            
                             <p class="descriptionUser">
+
                                 Descrição do repo
+
                             </p>
                         </div>
+
+                        <img src="imgs/arrow.svg"
+                        alt="arrow-next-pag"
+                        class="arrow-next-pag"
+                        >
                     </li>
+                    
                 </ul>
-            </nav>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
 
-
+    <script src="script.js"></script>
 </body>
 </html>
